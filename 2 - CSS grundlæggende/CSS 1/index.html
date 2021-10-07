@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS opg 1</title>
+    <style>
+      body {font-weight: bold;}
+      #main {font-size: 30px; color: orange;}
+      .question {font-size: 18px; color:lightseagreen;}
+      .answer {font-size: 18px; color: lightslategray;}
+      table
+      {
+        width: 600;
+      }
+      table, tr, td, th
+      {
+        border: 1px solid #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="main">Om CSS</p>
+    <p class="question">Hvad er en selector med egne ord?</p>
+    <p class="answer">Det er det som skal ændres.</p>
+    <p class="question">Hvad er en property med egne ord?</p>
+    <p class="answer">Det er den egenskab der skal ændres på.</p>
+    <p class="question">Hvad er en value med egne ord?</p>
+    <p class="answer">Det er den værdi som egenskaben skal have.</p>
+    <table>
+      <caption>
+        Oversigt over simple selectors
+      </caption>
+      <tr>
+        <th>Selector:</th>
+        <th>Eksempel:</th>
+        <th>Forklaring:</th>
+      </tr>
+      <tr>
+        <td>Element</td>
+        <td>p</td>
+        <td>Vælger alle elementer af denne type, f.eks. alle paragraphs</td>
+      </tr>
+      <tr>
+        <td>Id</td>
+        <td>#someId</td>
+        <td>Bruges til a identificere et enkelt element</td>
+      </tr>
+      <tr>
+        <td>Class</td>
+        <td>.question</td>
+        <td>Bruges til at definere en grupper HTML elementer for at anvende en unik style</td>
+      </tr>
+      <tr>
+        <td>Universal</td>
+        <td>*</td>
+        <td>Bruges til at vælge alle typer elementer</td>
+      </tr>
+      <tr>
+        <td>Grouping</td>
+        <td>table, tr, td, th</td>
+        <td>Bruges til at samle selectors der skal have den samme style</td>
+      </tr>
+    </table>
+  </body>
+</html>
