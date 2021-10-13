@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opgave 6 - boxmodel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .borderY {border-top: 5px solid purple; border-bottom: 5px solid purple;}
+        .borderX {border-left: 5px solid purple; border-right: 5px solid purple;}
+        .padding {padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;}
+        .margin {margin-top: 20px; margin-bottom: 10px; margin-left: 5px; margin-right: 30px;}
+        .img {padding: 10px; border: 5px solid purple; margin-top: 20px; margin-left: 40px; margin-right: 40px; margin-bottom: 50px;}
+        .imgBox {width: 920px; padding: 10px; border: 5px solid purple;}
+    </style>
+</head>
+<body>  
+    <p>Hvad handler box-modellen om? Det er en kasse der går rundt om alle elementer.</p>
+    <p>Hvorfor er det relevant at vide noget om? Fordi det kan gøre det nemmere og mere simpelt at lave en hjemmeside.</p>
+    <p>Undersøg et p. Er der nogen default margin, padding eller border? Den har margin-top 1em og margin-bootm 1em.</p>
+    <p>Undersøg en ul. Er der nogen default margin, padding eller border? Den har margin-top 1em, margin-bottom 1em og padding-left 40px.</p>
+    <br>
+    <p class="borderY">Jeg har 5px lilla border top og bund</p>    
+    <p class="borderX">Jeg har 5px lilla border i siderne</p>    
+    <p class="padding">Jeg har 10px padding i top og bund og 20 i siderne</p>    
+    <p class="margin">Jeg har 20px margin top, 30px margin højre, 10px margin bund og 5px margin venstre.</p>
+    <img class="img" src="img/robot.jpg" alt="">
+    <div class="imgBox">
+        <img src="img/robot2.jpg" alt="" width="300px" height="450px">
+        <img src="img/robot3.jpg" alt="" width="300px" height="450px">
+        <img src="img/robot4.jpg" alt="" width="300px" height="450px">
+    </div>
+</body>
+</html>
