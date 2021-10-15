@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opgave 7 - display</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {background-color: hsl(194, 100%, 31%);}
+        h1, h3, li, th, p {color: #ddd;}
+        li {display: inline-block;}
+        img {display: block; margin-left: auto; margin-right: auto;}
+        .t1 {border: 1px solid #ddd;}
+        table, tr, th, td {border: 1px solid #ddd; border-collapse: collapse;}
+        tr:nth-child(even) {background-color: #ccc;}
+        tr:nth-child(odd) {background-color: #bbb;}
+        th {background-color: hsl(194, 100%, 31%);}
+        table {width: 50%;}
+        .container {max-width: 1000px; padding: 1.5rem; margin: auto;}
+        .greenText {color: darkgreen;}
+        .t2 .male {display: none;}
+    </style>
+</head>
+<body> 
+    <p>Skriv med egne ord hvad display property påvirker? Den påvirker et element.</p>
+    <p>Hvad gør display: block? Den Viser et element som et block element (som p). Den starter på en ny linje og fylder hele bredden.</p>
+    <p>Hvad gør display: inline? Den Viser et element som et inline element (f.eks. span). hight og width properties har ingen effekt.</p>
+    <p>Hvilke fordele er der ved display: inline-block? Den viser et element som en blockbeholder på inline niveau. Selve elementet er formateret som et inline element, men du kan anvende height og width.</p>
+    <br>
+    <div class="container">
+        <h1>Display property</h1>
+        <h3 class="answer">Sådan centrerer man en block med css: <span class="greenText">css center div horizontally</span></h3>
+        <h3>Sådan farver man text: <span class="greenText">Man laver en class og en span forand og en span bagved den text man vil have farvet.</span></h3>
+        <h3>Display: inline-block</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Priser</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h3>Display: block</h3>
+        <img src="https://unsplash.it/id/237/250" alt="" height="250">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur magni dignissimos laborum ipsum, ratione laudantium adipisci quidem sint. Quasi repellendus non inventore adipisci saepe aperiam minima qui! Voluptatem, vel cum!</p>
+        <hr>
+        <h3>Display: none</h3>
+        <table class="t1">
+            <tr>
+                <th>Id:</th>
+                <th>Navn:</th>
+                <th>Alder:</th>
+            </tr>
+            <tr class="female">
+                <td>1</td>
+                <td>Anne</td>
+                <td>66</td>
+            </tr>
+            <tr class="male">
+                <td>2</td>
+                <td>Bent</td>
+                <td>66</td>
+            </tr>
+            <tr class="female">
+                <td>3</td>
+                <td>Hildur</td>
+                <td>64</td>
+            </tr>
+            <tr class="male">
+                <td>4</td>
+                <td>Hans</td>
+                <td>64</td>
+            </tr>
+            <tr class="female">
+                <td>5</td>
+                <td>Katja</td>
+                <td>40</td>
+            </tr>
+            <tr class="male">
+                <td>6</td>
+                <td>Mads</td>
+                <td>39</td>
+            </tr>
+        </table>
+        <br>
+        <table class="t2">
+            <tr>
+                <th>Id:</th>
+                <th>Navn:</th>
+                <th>Alder:</th>
+            </tr>
+            <tr class="female">
+                <td>1</td>
+                <td>Anne</td>
+                <td>66</td>
+            </tr>
+            <tr class="male">
+                <td>2</td>
+                <td>Bent</td>
+                <td>66</td>
+            </tr>
+            <tr class="female">
+                <td>3</td>
+                <td>Hildur</td>
+                <td>64</td>
+            </tr>
+            <tr class="male">
+                <td>4</td>
+                <td>Hans</td>
+                <td>64</td>
+            </tr>
+            <tr class="female">
+                <td>5</td>
+                <td>Katja</td>
+                <td>40</td>
+            </tr>
+            <tr class="male">
+                <td>6</td>
+                <td>Mads</td>
+                <td>39</td>
+            </tr>
+        </table>
+    </div>       
+</body>
+</html>
